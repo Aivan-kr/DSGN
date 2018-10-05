@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>DSGN</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<!--Top navbar-->
+	<nav class="nav navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="row">
+				<div class="navbar-header col-xs-3">
+	    			<span class="navbar-brand">DSGN</span>
+	      		</div>
+				<ul class="nav navbar-nav navbar-right menu col-xs-4" id="droptoggle">
+					<li>
+						<span><i class="fas fa-bars"></i>Menu</span>
+						<ul class="dropdown-menu" id="dropmenu">
+				          <li><a href="#">Page 1</a></li>
+				          <li><a href="#">Page 1</a></li>
+				          <li><a href="#">Page 1</a></li>
+				        </ul>
+					</li>
+				</ul>
+				<div class="col-xs-5">
+					<ul class="nav navbar-nav navbar-right social">
+						<li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
+						<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+						<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+						<li><a href="#"><i class="fab fa-linkedin"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</nav>
+
+	<script>
+		$(document).ready(function() {
+			$("#droptoggle").click(function(){
+				$("#dropmenu").slideToggle("slow");
+			})
+		})
+	</script>
+
+	<!--Header-->
+	<header class="container-fluid">
+		<div class="title text-center">
+			<p>Need our help?</p>
+			<h1>Top designers</h1>
+			<a href="#stats" class="btn btn-default">Check us!</a>
+			<div class="down-btn"><a href="#stats"><i class="fas fa-chevron-right"></i> <i class="fas fa-chevron-right"></i></a></div>
+		</div>
+	</header>
+
+	<main>
+		<!--Stats section-->
+		<section class="stats container" id="stats">
+			<div class="row text-center slideanim">
+				<div class="col-sm-4">
+					<canvas id="projects" width="220" height="220"></canvas>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
+				</div>
+				<div class="col-sm-4">
+					<canvas id="clients" width="220" height="220"></canvas>
+					<p>Ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod. incididunt</p>
+				</div>
+				<div class="col-sm-4">
+					<canvas id="months" width="220" height="220"></canvas>
+					<p>Dolor sit amet, consectetur adipisicing elit, sed do eiusmod. incididunt ut</p>
+				</div>
+			</div>
+			<script src="js/progress-bar.js"></script>
+		</section>
+
+		<!--Team section-->
+		<section class="team">
+			<div class="section-header container-fluid">
+				<div class="section-title text-center">
+					<p>Meet us!</p>
+					<h2>Our team</h2>
+				</div>
+			</div>
+
+			<div class="section-content container text-center">
+				<div class="team-member border-left row">
+					<div class="photo col-sm-6">
+						<img src="images/team-1.jpg" class="img-responsive" alt="Adrianna">
+					</div>
+					<div class="text-card col-sm-6">
+						<h3>Adrianna</h3>
+						<p class="position">Senior Graphic Designer</p>
+						<p class="experience">She is the graphic designer with 3 years of proffessional experience.</p>
+					</div>
+				</div>
+				<div class="team-member border-right row">
+					<div class="text-card col-sm-6">
+						<h3>Olivia</h3>
+						<p class="position">Art Director</p>
+						<p class="experience">She is the art director with 8 years of proffessional experience.</p>
+					</div>
+					<div class="photo col-sm-6">
+						<img src="images/team-2.jpg" alt="Olivia">
+					</div>
+				</div>
+				<div class="team-member border-left row">
+					<div class="photo col-sm-6">
+						<img src="images/team-3.jpg" alt="Thomas">
+					</div>
+					<div class="text-card col-sm-6">
+						<h3>Thomas</h3>
+						<p class="position">Software engeneer</p>
+						<p class="experience">He is the software engeneer with 5 years of proffessional experience.</p>
+					</div>
+				</div>
+				<div class="team-member border-right row">
+					<div class="text-card col-sm-6">
+						<h3>Taylor</h3>
+						<p class="position">CEO</p>
+						<p class="experience">She is the boss here.</p>
+					</div>
+					<div class="photo col-sm-6">
+						<img src="images/team-4.jpg" alt="Taylor">
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!--Portfolio section-->
+		<section class="portfolio">
+			<div class="section-header container-fluid">
+				<div class="section-title text-center">
+					<div class="wrapper">
+						<p>Checkout our projects!</p>
+						<h2>Portfolio</h2>
+					</div>
+				</div>
+			</div>
+			<div class="net">
+				<div class="net-row">
+					<img src="images/portfolio/1.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/2.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/3.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/4.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/5.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/7.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/6.jpg" alt="project" class="img-responsive">
+				</div>
+				<div class="net-row">
+					<img src="images/portfolio/8.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/9.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/10.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/11.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/12.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/13.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/14.jpg" alt="project" class="img-responsive">
+				</div>
+				<div class="net-row">
+					<img src="images/portfolio/15.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/16.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/17.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/18.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/19.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/20.jpg" alt="project" class="img-responsive">
+					<img src="images/portfolio/21.jpg" alt="project" class="img-responsive">
+				</div>
+			</div>
+		</section>
+
+		<!--Brands section-->
+		<section class="brands">
+			<div class="section-header container-fluid">
+				<div class="section-title text-center">
+					<div class="wrapper">
+						<p>We working for</p>
+						<h2>Brands</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid logos">
+				<div class="net-row">
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+				</div>
+				<div class="net-row">
+					<div class="logo"><img src="images/brands/apple.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/microsoft.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/vw.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/ubuntu.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/playstation.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/HP.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/LG.png" alt="brand" ></div>
+				</div>
+				<div class="net-row">
+					<div class="logo"><img src="images/brands/Android.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Shell.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Dell.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/EA.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Intel.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/HTML5.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/AVG.png" alt="brand" ></div>
+				</div>
+				<div class="net-row">
+					<div class="logo"><img src="images/brands/NIKE.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/AMD.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/KFC.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Nivea.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/HF2.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Insta.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/Cooler_master.png" alt="brand" ></div>
+				</div>
+				<div class="net-row">
+					<div class="logo"><img src="images/brands/bosh.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/teamspeak.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/allegro.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/ups.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/wordpress.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/em.png" alt="brand" ></div>
+					<div class="logo"><img src="images/brands/mitsubishi.png" alt="brand" ></div>
+				</div>
+				<div class="net-row">
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+					<div class="logo"></div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<footer class="container-fluid">
+		<div class="container text-center">
+			<div class="row">
+				<div class="col-sm-4">
+					<h3>Our team</h3>
+					<p>We are the best company in the entire world!</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>About</h3>
+					<p>We are the best company in the entire world!</p>
+				</div>
+				<div class="col-sm-4">
+					<h3>Contact</h3>
+					<p>free@template.com<br>
+					www.freetemplate.com<br>
+					tel. +48 123 456 79</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<script>$(document).ready(function(){
+  		$("header a").on('click', function(event) {
+		  if (this.hash !== "") {
+	    	event.preventDefault();
+		    var hash = this.hash;
+		    $('html, body').animate({
+		      scrollTop: $(hash).offset().top
+	    	}, 900, function(){
+	      		window.location.hash = hash;
+	     	});
+	   	  }
+	  });
+	});
+
+	</script>
+</body>
+</html>
